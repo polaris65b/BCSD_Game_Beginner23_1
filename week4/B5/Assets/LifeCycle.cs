@@ -18,6 +18,13 @@ public class LifeCycle : MonoBehaviour
         Debug.Log("사냥 장비를 챙겼습니다.");
     }
 
+    // 활성호
+
+    // OnEnable() : 게임 오브젝트가 활성되었을 때
+    private void OnEnable()
+    {
+        Debug.Log("플레이어 로그인!");
+    }
     // 물리
 
     //FixedUpdate : 물리 연산 업데이트
@@ -42,6 +49,13 @@ public class LifeCycle : MonoBehaviour
         Debug.Log("경험치 획득.");
     }
 
+    // 비활성화
+    // OnDisable : 게임 오브젝트가 비활성화 되었을 때
+    private void OnDisable()
+    {
+        Debug.Log("플레이어 로그아웃");
+    }
+
     // 해체
 
     // OnDestroy : 게임 오브젝트가 삭제될 때
@@ -49,4 +63,5 @@ public class LifeCycle : MonoBehaviour
     {
         Debug.Log("플레이어 데이터를 해제하였습니다.");
     }
+
 }
