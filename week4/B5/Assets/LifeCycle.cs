@@ -26,4 +26,19 @@ public class LifeCycle : MonoBehaviour
     {
         Debug.Log("이동~");
     }
+
+    // 게임 로직
+
+    // Update : 게임 로직 업데이트
+    // 환경에 따라 실행 주지가 떨어질 수 있다.
+    private void Update()
+    {
+        Debug.Log("몬스터 사냥!!");
+    }
+
+    // 모든 업데이트 끝난 후
+    private void LateUpdate()
+    {
+        Debug.Log("경험치 획득.");
+    }
 }
