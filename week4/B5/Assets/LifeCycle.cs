@@ -41,4 +41,12 @@ public class LifeCycle : MonoBehaviour
     {
         Debug.Log("경험치 획득.");
     }
+
+    // 해체
+
+    // OnDestroy : 게임 오브젝트가 삭제될 때
+    private void OnDestroy()
+    {
+        Debug.Log("플레이어 데이터를 해제하였습니다.");
+    }
 }
